@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Ozone_Tunez_backend": {
+      "main": "src/Ozone_Tunez_backend/main.mo",
+      "type": "motoko"
+    },
+    "Ozone_Tunez_frontend": {
+      "dependencies": [
+        "Ozone_Tunez_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Ozone_Tunez_frontend/src/index.html"
+      },
+      "source": [
+        "src/Ozone_Tunez_frontend/assets",
+        "dist/Ozone_Tunez_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
