@@ -1,6 +1,6 @@
 {
   "canisters": {
-    "Ozone_Tunez_backend": {
+    "Main": {
       "main": "src/main.mo",
       "type": "motoko"
     },
