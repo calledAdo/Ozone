@@ -13,7 +13,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 
   button.removeAttribute("disabled");
 
-  document.getElementById("greeting").innerText = greeting;
+  document.getElementById("greeting").innerText = greeting.Ok;
 
   return false;
 });
