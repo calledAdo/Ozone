@@ -35,16 +35,23 @@ now we would need to deploy our free Dip721 NFT canister by running and set its 
 dfx canister create Main
 
 #copy the resulting canister id and the run to deploy
-dfx deploy DIP721 --arguments "( principal \"$(dfx canister id Main)\",record {logo = record{
+dfx deploy DIP721 --argument "( principal \"$(dfx canister id Main)\",record {logo = record{
    logo_type = \"ICO\";
    data = \"NFT series\";
 };
-name = \"MY NFT\";symbol = \"m_NFT\";maxLimit = 1000000})"
+name = \"MY NFT\";symbol = \"m_NFT\";maxLimit = 100})"
+```
+
+```bash 
+  dfx deploy Main --argument "(principal \"mxzaz-hqaaa-aaaar-qaada-cai\",principal \"asrmz-lmaaa-aaaaa-qaaeq-cai\")"
 ```
   
 
   Now you can create a collection from your already deployed NFT canister and  set anyone to mint it  after paying the fee ;
 
-  __Note:Use the freeMint function if running locally  __
+  __Note:Use the freeMint function if running locally  __ <br>
+
+  currently deployed at  [Main](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=zbrhb-qyaaa-aaaal-adi5q-cai)
+  with sample collection at [Sample Collection](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=zgqbv-5aaaa-aaaal-adi5a-cai)
 
 
